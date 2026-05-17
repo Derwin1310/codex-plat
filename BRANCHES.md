@@ -11,16 +11,16 @@ Este repo se produce como una secuencia de checkpoints. Cada rama representa el 
 
 | Rama | Estado |
 | --- | --- |
-| `clase-00-starter` | Repo inicial, app corre, snapshots funcionan, sin `AGENTS.md` final ni skills. |
-| `clase-01-product-map` | AI Radar entendido como producto y repo, primera mejora visual revisable. |
-| `clase-02-agents-md` | Configuracion inicial de Codex y `AGENTS.md`. |
-| `clase-03-news-to-build-guide` | Primera skill del proyecto. |
+| `clase-00-starter` | Repo inicial, app corre, Dekk valida comandos, snapshots funcionan, sin `AGENTS.md` final ni skills. |
+| `clase-01-anatomia-codex` | Codex configurado con modelo, sandbox, permisos, perfiles y comandos base. |
+| `clase-02-agents-md` | AI Radar entendido por Codex y `AGENTS.md` verificado con experimento antes/despues. |
+| `clase-03-skills` | Primera skill del proyecto para convertir noticias en senales accionables. |
 | `clase-04-airadar-cli` | CLI agent-friendly inicial. |
 | `clase-05-ingestion` | Ingestion idempotente y novelty gate. |
 | `clase-06-dedupe-clusters` | Deduplicacion, normalizacion y clusters. |
 | `clase-07-ranking-guides` | Ranking y primera guia practica. |
 | `clase-08-project-scout` | Proyectos relacionados por noticia. |
-| `clase-09-evidence-audit` | Evidencia auditable. |
+| `clase-09-operacion-segura` | Evidencia auditable, costos, tokens, logs y seguridad de secretos. |
 | `clase-10-codex-exec-subagents` | `codex exec`, subagentes y contexto. |
 | `clase-11-ai-newsroom` | Fuentes vivas, MCP y observabilidad. |
 | `clase-12-deploy-security` | Vercel, Supabase y seguridad de secretos. |
@@ -30,4 +30,3 @@ Este repo se produce como una secuencia de checkpoints. Cada rama representa el 
 ## Regla de produccion
 
 No se crean soluciones escondidas dentro de `main`. Cada rama se construye de forma incremental y se valida antes de publicarla.
-

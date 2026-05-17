@@ -6,6 +6,25 @@ Este es el repo de trabajo del curso avanzado de Codex. Los estudiantes trabajan
 
 ## Setup
 
+La ruta recomendada usa Dekk para que todos los comandos corran desde la raiz correcta del repo:
+
+```bash
+dekk airadar install
+dekk airadar doctor
+dekk airadar lint
+dekk airadar test
+dekk airadar build
+dekk airadar dev
+```
+
+Si no tienes Dekk instalado:
+
+```bash
+pipx install dekk
+```
+
+Fallback sin Dekk:
+
 ```bash
 pnpm install
 pnpm lint
@@ -25,6 +44,7 @@ http://localhost:4173
 - Dashboard inicial con datos de snapshots.
 - Normalizacion minima de fuentes.
 - Validacion de snapshots.
+- `.dekk.toml` con comandos reproducibles para Codex y estudiantes.
 - Migracion inicial de Supabase.
 - `.env.example` sin secretos.
 - `AGENTS.template.md` para generar el `AGENTS.md` real en clase 2.
@@ -37,15 +57,15 @@ Durante la produccion del curso, cada clase tendra una rama con el estado final 
 
 ```text
 clase-00-starter
-clase-01-product-map
+clase-01-anatomia-codex
 clase-02-agents-md
-clase-03-news-to-build-guide
+clase-03-skills
 clase-04-airadar-cli
 clase-05-ingestion
 clase-06-dedupe-clusters
 clase-07-ranking-guides
 clase-08-project-scout
-clase-09-evidence-audit
+clase-09-operacion-segura
 clase-10-codex-exec-subagents
 clase-11-ai-newsroom
 clase-12-deploy-security
