@@ -6,6 +6,12 @@ coverage/
 .env
 .env.*
 .airadar/
+data/searches/
+data/reports/
+snapshots/weekly/
+config/sources.json
+frameio/
+recordings/
 *.log
 *.sqlite
 *.db
