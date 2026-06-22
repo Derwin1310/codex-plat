@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-radar.local/contracts/ai-radar-diary.schema.json",
+  "title": "AI Radar diary",
+  "description": "A dated, locally stored set of AI Radar signals.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contractVersion", "recordedAt", "signals"],
+  "properties": {
+    "contractVersion": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "recordedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "signals": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/signal" }
+    }
+  },
+  "$defs": {
+    "signal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "publishedAt", "title", "source", "evidence", "impact", "action", "state"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "publishedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["publisher", "url"],
+          "properties": {
+            "publisher": { "type": "string", "minLength": 1 },
+            "url": { "type": "string", "format": "uri" }
+          }
+        },
+        "evidence": { "type": "string", "minLength": 1 },
+        "impact": { "type": "string", "minLength": 1 },
+        "action": { "type": "string", "minLength": 1 },
+        "state": {
+          "type": "string",
+          "enum": ["confirmed", "reported", "monitoring", "retracted"]
+        }
+      }
+    }
+  }
+}

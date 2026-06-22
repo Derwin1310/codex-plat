@@ -1,0 +1,136 @@
+{
+  "contractVersion": "1.0",
+  "recordedAt": "2026-06-22",
+  "signals": [
+    {
+      "id": "meta-facebook-ai-mode",
+      "publishedAt": "2026-06-15",
+      "title": "Meta rolls out AI Mode in Facebook search",
+      "source": {
+        "publisher": "Meta",
+        "url": "https://about.fb.com/news/2026/06/new-ai-tools-to-help-you-make-things-happen-on-facebook/"
+      },
+      "evidence": "Meta announced AI Mode for Facebook search, which uses Meta AI to answer questions using public content from its apps, including Groups and Reels.",
+      "impact": "AI-assisted discovery is moving into a major social platform's native search experience, creating another distribution channel for answer-oriented interfaces.",
+      "action": "Monitor availability, source attribution behavior, and whether public brand content is surfaced reliably in AI Mode answers.",
+      "state": "confirmed"
+    },
+    {
+      "id": "openai-ona-acquisition-codex",
+      "publishedAt": "2026-06-11",
+      "title": "OpenAI announces planned acquisition of Ona for Codex",
+      "source": {
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/openai-to-acquire-ona/"
+      },
+      "evidence": "OpenAI announced a planned acquisition of Ona, subject to regulatory approval, to add secure, customer-controlled cloud execution and orchestration technology to Codex.",
+      "impact": "Persistent, customer-controlled execution environments are becoming a core requirement for deploying long-running coding and knowledge-work agents.",
+      "action": "For production agent work, evaluate controls for execution isolation, credential scope, audit logs, and human review rather than comparing models alone.",
+      "state": "confirmed"
+    },
+    {
+      "id": "openai-models-codex-oracle-cloud",
+      "publishedAt": "2026-06-10",
+      "title": "OpenAI models and Codex become purchasable through Oracle cloud commitments",
+      "source": {
+        "publisher": "OpenAI",
+        "url": "https://openai.com/index/openai-on-oracle-cloud/"
+      },
+      "evidence": "OpenAI said eligible Oracle Customer Hub credits will be usable for OpenAI models and Codex through Oracle Cloud Infrastructure in the coming weeks.",
+      "impact": "Oracle customers may be able to adopt frontier AI through existing procurement and cloud-governance paths rather than a new vendor contract.",
+      "action": "If OCI is already strategic, confirm eligibility, regional availability, data handling, and pricing before planning a deployment.",
+      "state": "confirmed"
+    },
+    {
+      "id": "eu-ai-content-labelling-code",
+      "publishedAt": "2026-06-10",
+      "title": "European Commission publishes AI-generated-content labelling code",
+      "source": {
+        "publisher": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content"
+      },
+      "evidence": "The Commission published a voluntary code describing measures for transparency obligations under the AI Act that it says apply from 2 August 2026, including labelling certain deepfakes and AI-generated or manipulated public-interest text.",
+      "impact": "Generative-AI products serving EU users need a concrete provenance and disclosure plan before the obligations take effect.",
+      "action": "Map each EU-facing feature that generates or modifies content to its labelling, user-notice, and evidence-retention requirements.",
+      "state": "confirmed"
+    },
+    {
+      "id": "anthropic-fable-5-safeguarded-release",
+      "publishedAt": "2026-06-09",
+      "title": "Anthropic launches Claude Fable 5 with cybersecurity safeguards",
+      "source": {
+        "publisher": "Anthropic",
+        "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+      },
+      "evidence": "Anthropic announced Claude Fable 5 for general use and said that some requests in sensitive areas, including cybersecurity, will receive responses from its next-most-capable model; it estimates the safeguard triggers in under 5% of sessions on average.",
+      "impact": "Model behavior can vary by task category even within a single product tier, affecting reliability for security-related evaluation and workflow design.",
+      "action": "Add representative sensitive-task tests and fallback handling to model evaluations; do not assume consistent behavior across all prompts.",
+      "state": "confirmed"
+    },
+    {
+      "id": "eu-funds-open-source-ai-model",
+      "publishedAt": "2026-06-19",
+      "title": "EU funds an open-source AI model",
+      "source": {
+        "publisher": "MLex",
+        "url": "https://www.mlex.com/mlex/artificial-intelligence"
+      },
+      "evidence": "MLex reported that the European Commission is funding an open-source model to strengthen Europe's AI position.",
+      "impact": "May create an option for regulated or sovereignty-sensitive deployments.",
+      "action": "Track its license, released weights, benchmarks, and hosting requirements before evaluation.",
+      "state": "reported"
+    },
+    {
+      "id": "anthropic-access-restrictions-regulatory-scrutiny",
+      "publishedAt": "2026-06-18",
+      "title": "Anthropic model-access restrictions draw regulatory scrutiny",
+      "source": {
+        "publisher": "AI Adjacent",
+        "url": "https://aiadjacent.com/issue/daily-briefing-2026-06-18"
+      },
+      "evidence": "A Reuters-referenced briefing said the European Commission was examining the consequences of Anthropic's access decision following a US order.",
+      "impact": "Government policy can affect frontier-model availability and vendor risk.",
+      "action": "Avoid critical single-provider workflows and document model fallback paths.",
+      "state": "reported"
+    },
+    {
+      "id": "chatgpt-market-share-below-half",
+      "publishedAt": "2026-06-16",
+      "title": "ChatGPT assistant market share reportedly falls below 50%",
+      "source": {
+        "publisher": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/"
+      },
+      "evidence": "TechCrunch, citing Sensor Tower's 2026 report, said ChatGPT fell below half of assistant market share while remaining the largest service.",
+      "impact": "The assistant layer is becoming materially multi-vendor.",
+      "action": "Test user-facing workflows with ChatGPT, Gemini, and Claude instead of relying on a single assistant.",
+      "state": "reported"
+    },
+    {
+      "id": "anthropic-tcs-regulated-industry-deployment",
+      "publishedAt": "2026-06-12",
+      "title": "TCS deploys Claude and builds regulated-industry solutions",
+      "source": {
+        "publisher": "Anthropic",
+        "url": "https://www.anthropic.com/news/tcs-anthropic-partnership"
+      },
+      "evidence": "Anthropic announced that TCS will provide Claude to 50,000 employees and build products for financial services, healthcare, and the public sector.",
+      "impact": "Signals large-scale enterprise adoption where auditability and reliability are material requirements.",
+      "action": "Assess Claude's governance, audit, and integration features against alternatives for enterprise use cases.",
+      "state": "confirmed"
+    },
+    {
+      "id": "us-voluntary-frontier-model-review",
+      "publishedAt": "2026-06-02",
+      "title": "US establishes voluntary early review for advanced AI models",
+      "source": {
+        "publisher": "Los Angeles Times",
+        "url": "https://www.latimes.com/politics/story/2026-06-02/trump-signs-executive-order-to-vet-top-ai-models-for-national-security-risks"
+      },
+      "evidence": "Reporting on the executive order described a voluntary government early-review process for the most advanced AI models.",
+      "impact": "Frontier-model releases may carry policy-related timing and access uncertainty.",
+      "action": "Version-pin production models and account for release and deprecation risk in provider plans.",
+      "state": "confirmed"
+    }
+  ]
+}
